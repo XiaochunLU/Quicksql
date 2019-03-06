@@ -78,7 +78,7 @@
                 <exclude>org.apache.hadoop:*:jar</exclude>
                 <exclude>org.apache.hive:*:jar</exclude>
                 <exclude>org.spark-project.hive:*:jar</exclude>
-                <!--<exclude>org.apache.lucene:*:jar</exclude>-->
+                <exclude>org.antlr:*:jar</exclude>
                 <exclude>org.apache.spark:*:jar</exclude>
             </excludes>
             <outputDirectory>/${qsql.release}/lib</outputDirectory>
@@ -92,6 +92,7 @@
                 <include>org.elasticsearch:elasticsearch-spark*:jar</include>
                 <include>mysql:mysql-connector-java*:jar</include>
                 <include>org.apache.derby:derby*:jar</include>
+                <include>*:ojdbc*:jar</include>
             </includes>
             <outputDirectory>/${qsql.release}/lib/spark</outputDirectory>
             <scope>runtime</scope>
